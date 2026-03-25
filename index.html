@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The Bible in One Hour — Seven Covenants of Salvation History</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400;1,600&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --p:#f8f3e8;--p2:#efe8d6;--p3:#e5dbc6;
+  --ink:#1a1006;--ink2:#3d2b0e;--ink3:#6b4f28;
+  --gold:#b8860b;--gold2:#d4a017;--gold3:#f0c040;--gp:#fdf3d0;
+  --cr:#8b1a1a;
+  --ft:'Cinzel',Georgia,serif;
+  --fb:'Crimson Pro',Georgia,serif;
+  --fu:'Source Sans 3',sans-serif;
+  --sh:0 4px 24px rgba(26,16,6,.13);
+  --sh2:0 8px 48px rgba(26,16,6,.2);
+  --r:14px;--tr:all .28s cubic-bezier(.4,0,.2,1);
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);background:var(--p);color:var(--ink);font-size:17px;line-height:1.7;min-height:100vh;background-image:radial-gradient(ellipse at 20% 10%,rgba(184,134,11,.06) 0%,transparent 50%),radial-gradient(ellipse at 80% 90%,rgba(139,26,26,.05) 0%,transparent 50%)}
+.screen{display:none;animation:fu .38s ease both}
+.screen.active{display:block}
+@keyframes fu{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+/* NAV */
+#nav{position:sticky;top:0;z-index:100;background:rgba(248,243,232,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--p3);padding:.65rem 2rem;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 10px rgba(26,16,6,.08)}
+.brand{font-family:var(--ft);font-size:.82rem;font-weight:700;letter-spacing:.12em;color:var(--gold);cursor:pointer}
+.brand:hover{color:var(--gold2)}
+.nav-btns{display:flex;gap:.5rem;flex-wrap:wrap}
+.btn{font-family:var(--fu);font-size:.78rem;font-weight:700;letter-spacing:.05em;padding:.38rem .9rem;border-radius:6px;cursor:pointer;transition:var(--tr);border:none}
+.bo{background:transparent;border:1.5px solid var(--gold);color:var(--gold)}.bo:hover{background:var(--gold);color:#fff}
+.bs{background:var(--ink2);color:var(--gp)}.bs:hover{background:var(--gold);color:var(--ink)}
+/* HERO */
+.hero{min-height:90vh;display:grid;grid-template-columns:1.1fr .9fr;align-items:center}
+.hl{padding:4.5rem 3rem 4.5rem 4rem;position:relative}
+.hl::after{content:'';position:absolute;right:0;top:8%;bottom:8%;width:1px;background:linear-gradient(to bottom,transparent,var(--gold),transparent)}
+.eyebrow{font-family:var(--fu);font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold2);background:var(--gp);display:inline-block;padding:.28rem .9rem;border-radius:4px;margin-bottom:1.6rem}
+h1.ht{font-family:var(--ft);font-size:clamp(2.2rem,5vw,4rem);font-weight:900;line-height:1.06;color:var(--ink);margin-bottom:.6rem}
+h1.ht span{color:var(--gold)}
+.hs{font-family:var(--fb);font-style:italic;font-size:1.25rem;color:var(--ink3);margin-bottom:1.6rem}
+.hrule{width:64px;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:2px;margin-bottom:1.6rem}
+.hau{font-size:.98rem;font-weight:600;color:var(--ink2);margin-bottom:.15rem}
+.hin{font-size:.9rem;color:var(--ink3);margin-bottom:1.8rem}
+.hq{font-style:italic;font-size:.95rem;color:var(--ink3);border-left:3px solid var(--gold);padding-left:.9rem;margin-bottom:2.2rem;line-height:1.6}
+.hcta{display:flex;gap:.8rem;flex-wrap:wrap}
+.cp{font-family:var(--fu);font-weight:700;font-size:.98rem;letter-spacing:.04em;padding:.82rem 2rem;border-radius:8px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--ink);border:none;cursor:pointer;box-shadow:0 4px 18px rgba(184,134,11,.32);transition:var(--tr)}
+.cp:hover{transform:translateY(-2px);box-shadow:0 6px 26px rgba(184,134,11,.42)}
+.cs{font-family:var(--fu);font-weight:700;font-size:.95rem;padding:.8rem 1.8rem;border-radius:8px;background:transparent;color:var(--ink2);border:1.5px solid var(--ink3);cursor:pointer;transition:var(--tr)}
+.cs:hover{border-color:var(--gold);color:var(--gold)}
+.hr2{padding:3.5rem 3.5rem 3.5rem 2.5rem}
+.hr2t{font-family:var(--fu);font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);margin-bottom:.8rem}
+.pill{display:flex;align-items:center;gap:.9rem;background:#fff;border-radius:10px;padding:.85rem 1.1rem;border-left:4px solid var(--cc,var(--gold));box-shadow:var(--sh);cursor:pointer;transition:var(--tr);margin-bottom:1rem}
+.pill:hover{transform:translateX(5px);box-shadow:var(--sh2)}
+.pn{font-family:var(--ft);font-size:1rem;font-weight:700;color:var(--cc,var(--gold));min-width:1.3rem}
+.pi{font-size:1.25rem}
+.pt{flex:1}
+.pname{font-family:var(--ft);font-size:.85rem;font-weight:600;color:var(--ink);display:block}
+.ploc{font-family:var(--fu);font-size:.72rem;color:var(--ink3)}
+/* CONCEPTS */
+.concepts{background:var(--p2);padding:4rem;border-top:1px solid var(--p3)}
+.cg{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.cc{background:#fff;border-radius:var(--r);padding:1.8rem;box-shadow:var(--sh);border-top:4px solid var(--cct,var(--gold))}
+.cc-icon{font-size:2rem;margin-bottom:.7rem}
+.cc-t{font-family:var(--ft);font-size:.95rem;font-weight:700;color:var(--ink);margin-bottom:.55rem;letter-spacing:.03em}
+.cc-b{font-size:.93rem;color:var(--ink2);line-height:1.65}
+.cc-b strong{color:var(--ink);font-weight:600}
+/* GRID */
+#sg{padding:3rem 2rem 5rem}
+.gh{max-width:1200px;margin:0 auto 2.2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.gt{font-family:var(--ft);font-size:clamp(1.3rem,3vw,1.9rem);font-weight:700;color:var(--ink)}
+.cov-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(295px,1fr));gap:1.5rem}
+.ccard{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);cursor:pointer;transition:var(--tr);display:flex;flex-direction:column;border:1px solid var(--p3)}
+.ccard:hover{transform:translateY(-5px);box-shadow:var(--sh2)}
+.ch{padding:1.3rem 1.5rem .9rem;position:relative;overflow:hidden;color:#fff}
+.ch::before{content:attr(data-r);position:absolute;right:-8px;top:-8px;font-family:var(--ft);font-size:5.5rem;font-weight:900;opacity:.1;line-height:1}
+.crom{font-family:var(--ft);font-size:1.2rem;font-weight:700;opacity:.8}
+.cion{font-size:1.9rem;position:absolute;top:1.1rem;right:1.3rem}
+.cname{font-family:var(--ft);font-size:1.3rem;font-weight:700;margin-top:.25rem;line-height:1.2}
+.csub{font-style:italic;font-size:.88rem;opacity:.88;margin-top:.25rem}
+.cbody{padding:1.2rem 1.5rem;flex:1}
+.cmeta{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:.8rem}
+.mt{font-family:var(--fu);font-size:.7rem;font-weight:700;padding:.2rem .6rem;border-radius:20px}
+.cov{font-size:.88rem;color:var(--ink2);line-height:1.58}
+.cf{padding:.85rem 1.5rem;color:#fff;display:flex;align-items:center;justify-content:space-between;font-family:var(--fu);font-size:.78rem;font-weight:600}
+/* DETAIL */
+#sd{padding:0}
+.dh{color:#fff;padding:2.8rem 3rem 2.2rem;position:relative;overflow:hidden}
+.dh::before{content:attr(data-r);position:absolute;right:-15px;bottom:-20px;font-family:var(--ft);font-size:13rem;font-weight:900;opacity:.07;line-height:1;pointer-events:none}
+.dht{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem}
+.dri{font-family:var(--ft);font-size:1.3rem;opacity:.7;font-weight:700}
+.dicon{font-size:3.2rem}
+.dn{font-family:var(--ft);font-size:clamp(1.7rem,4vw,2.8rem);font-weight:900;line-height:1.1;margin:.35rem 0}
+.dst{font-style:italic;font-size:1.1rem;opacity:.88;margin-bottom:1.3rem}
+.dbadges{display:flex;flex-wrap:wrap;gap:.45rem}
+.badge{font-family:var(--fu);font-size:.76rem;font-weight:700;background:rgba(255,255,255,.18);padding:.28rem .85rem;border-radius:20px;backdrop-filter:blur(4px)}
+.db{max-width:1000px;margin:0 auto;padding:2.2rem 2rem 4.5rem}
+.dsec{margin-bottom:2.3rem}
+.dlbl{font-family:var(--fu);font-size:.7rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--cc,var(--gold));margin-bottom:.9rem;padding-bottom:.45rem;border-bottom:2px solid var(--ccp,#f0f0f0)}
+.ov{background:#fff;border-radius:var(--r);padding:1.7rem 1.9rem;box-shadow:var(--sh);border-left:5px solid var(--cc,var(--gold));font-size:1rem;color:var(--ink2);line-height:1.75}
+.smbox{background:var(--gp);border:1px solid var(--gold2);border-radius:var(--r);padding:1.3rem 1.7rem}
+.smbox p{font-style:italic;font-size:1.03rem;color:var(--ink2);line-height:1.65}
+/* Slide cards */
+.scard{background:#fff;border-radius:var(--r);padding:1.7rem 1.9rem;box-shadow:var(--sh);border-top:3px solid var(--cc,var(--gold));margin-bottom:1.3rem}
+.snum{font-family:var(--fu);font-size:.7rem;font-weight:700;color:var(--cc,var(--gold));letter-spacing:.1em;text-transform:uppercase;margin-bottom:.45rem}
+.stit{font-family:var(--ft);font-size:1.25rem;font-weight:700;color:var(--ink);margin-bottom:.35rem}
+.ssub{font-style:italic;font-size:.95rem;color:var(--ink3);border-left:3px solid var(--cc,var(--gold));padding-left:.75rem;margin-bottom:1.3rem}
+.cblocks{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:1rem;margin-top:.4rem}
+.cblock{background:var(--p);border-radius:10px;padding:1rem 1.2rem;border-top:2px solid var(--cc,var(--gold))}
+.bh{font-family:var(--ft);font-size:.88rem;font-weight:700;color:var(--cc,var(--gold));margin-bottom:.55rem;line-height:1.3}
+.bl{list-style:none;display:flex;flex-direction:column;gap:.4rem}
+.bl li{font-size:.88rem;color:var(--ink2);padding-left:.9rem;position:relative;line-height:1.52}
+.bl li::before{content:'›';position:absolute;left:0;color:var(--cc,var(--gold));font-weight:700}
+.sq{font-style:italic;font-size:1.03rem;color:var(--ink2);background:var(--gp);border-left:4px solid var(--gold);padding:.95rem 1.3rem;border-radius:0 8px 8px 0;margin:1.1rem 0;line-height:1.6}
+.snote{font-size:.86rem;color:var(--ink3);font-style:italic;background:var(--p2);border-radius:8px;padding:.75rem 1rem;margin-top:.9rem;line-height:1.58}
+.tw{overflow-x:auto;margin-top:.75rem;border-radius:var(--r);box-shadow:var(--sh)}
+table{width:100%;border-collapse:collapse;background:#fff;font-size:.88rem}
+thead tr{background:var(--ink2)}
+th{font-family:var(--fu);font-size:.72rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--gp);padding:.8rem .95rem;text-align:left}
+td{padding:.75rem .95rem;border-bottom:1px solid var(--p3);color:var(--ink2);vertical-align:top;line-height:1.5}
+tr:last-child td{border-bottom:none}
+tr:nth-child(even) td{background:var(--p)}
+.tf{font-weight:700;color:var(--ink);white-space:nowrap}
+.tnew{color:var(--cr);font-weight:600}
+/* SUMMARY */
+#ss{padding:3rem 2rem 5rem}
+.sh2{max-width:1200px;margin:0 auto 2.2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.st{font-family:var(--ft);font-size:clamp(1.3rem,3vw,1.9rem);font-weight:700;color:var(--ink)}
+.stw{max-width:1200px;margin:0 auto 3rem;overflow-x:auto;border-radius:var(--r);box-shadow:var(--sh2)}
+.stab{width:100%;border-collapse:collapse;min-width:700px}
+.stab thead tr{background:var(--ink)}
+.stab th{font-family:var(--fu);font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--gold3);padding:.95rem 1rem;text-align:left}
+.stab td{padding:.82rem 1rem;border-bottom:1px solid rgba(0,0,0,.06);font-size:.9rem;color:var(--ink2);vertical-align:middle}
+.stab tr:last-child td{border-bottom:none}
+.trom{font-family:var(--ft);font-size:1.05rem;font-weight:700;cursor:pointer;transition:var(--tr)}
+.trom:hover{transform:scale(1.12)}
+.conc{max-width:1200px;margin:0 auto;background:var(--ink2);border-radius:var(--r);padding:2.8rem;text-align:center;color:var(--p)}
+.conc h3{font-family:var(--ft);font-size:1.35rem;color:var(--gold3);margin-bottom:1.1rem}
+.cans{font-style:italic;font-size:1.5rem;color:var(--gold2);margin-bottom:.9rem;line-height:1.4;font-family:var(--fb)}
+.celab{font-size:.98rem;color:var(--p2);max-width:600px;margin:0 auto 1.4rem;line-height:1.7}
+.ccred{font-size:.78rem;color:var(--gp);opacity:.65;margin-top:.3rem}
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .45s ease,transform .45s ease}
+.reveal.vis{opacity:1;transform:none}
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .hr2{display:none}
+  .hl{padding:3rem 1.5rem}
+  .concepts{padding:2.5rem 1.2rem}
+  .cg{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .cg{grid-template-columns:1fr}
+  #nav{padding:.55rem 1rem}
+  .dh{padding:2rem 1.2rem}
+  .db{padding:1.4rem .9rem 4rem}
+  .cblocks{grid-template-columns:1fr}
+  #sg,#ss{padding:2rem .9rem 4rem}
+}
+</style>
+</head>
+<body>
+<nav id="nav">
+  <div class="brand" onclick="go('i')">✦ BIBLE IN ONE HOUR</div>
+  <div class="nav-btns">
+    <button class="btn bo" onclick="go('g')">All Covenants</button>
+    <button class="btn bs" onclick="go('s')">Summary Table</button>
+  </div>
+</nav>
+
+<!-- INTRO -->
+<div id="si" class="screen active">
+  <div class="hero">
+    <div class="hl">
+      <div class="eyebrow">John Bergsma · Bible Basics for Catholics</div>
+      <h1 class="ht">The Bible<br><span>in One Hour</span></h1>
+      <p class="hs">The Covenants of Salvation History</p>
+      <div class="hrule"></div>
+      <p class="hau">Dr. John S. Bergsma, Ph.D.</p>
+      <p class="hin">Franciscan University of Steubenville</p>
+      <blockquote class="hq">"Again and again you offered them covenants and through the prophets taught them to look forward to salvation." — Eucharistic Prayer II</blockquote>
+      <div class="hcta">
+        <button class="cp" onclick="go('g')">Explore the Seven Covenants →</button>
+        <button class="cs" onclick="go('s')">View Summary Table</button>
+      </div>
+    </div>
+    <div class="hr2">
+      <div class="hr2t">Seven Covenants of Salvation History</div>
+      <div id="pills"></div>
+    </div>
+  </div>
+  <div class="concepts">
+    <div class="cg">
+      <div class="cc reveal" style="--cct:var(--gold)">
+        <div class="cc-icon">🔑</div>
+        <div class="cc-t">The Master Key: COVENANT</div>
+        <div class="cc-b">A covenant is not a contract. A contract exchanges <strong>property</strong>; a covenant exchanges <strong>persons</strong>. It creates a family bond between parties not previously related. Two perfect examples: <strong>Marriage</strong> — a man and woman enter as strangers and leave as one family. <strong>Adoption</strong> — a child becomes truly yours through solemn oath. God has been making covenants — trying to bring us into his family — from the very first pages of Genesis. Every time humanity breaks it, God initiates a new one. This is the entire plot of the Bible.</div>
+      </div>
+      <div class="cc reveal" style="--cct:var(--cr)">
+        <div class="cc-icon">👤</div>
+        <div class="cc-t">The Mediator</div>
+        <div class="cc-b">In ancient covenant-making, one person represented the group. That person is the <strong>mediator</strong>. Six great mediators stand out: <strong>Adam · Noah · Abraham · Moses · David · Jesus</strong>. Each mediator represents a widening circle — from one couple, to all humanity, to all creation. Subsequent mediators do not cancel previous ones — they fulfil and expand them, like concentric rings. Jesus is the outermost ring, encompassing all humanity for all time.</div>
+      </div>
+      <div class="cc reveal" style="--cct:#4a5e2a">
+        <div class="cc-icon">⛰️</div>
+        <div class="cc-t">The Mountain</div>
+        <div class="cc-b">Every major covenant is made on a mountaintop — Eden, Ararat, Moriah, Sinai, Zion, Calvary. Mountains are places of encounter with God where distractions fall away: <strong>Lonely</strong> — easier to focus on God. <strong>Elevated</strong> — God's-eye view. <strong>Things look smaller</strong> — less daunting. <strong>Everything in context.</strong> "Mountaintop experience" is not just a metaphor — it describes every decisive moment in salvation history. The Eucharist brings the mountaintop into every parish, every Sunday.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GRID -->
+<div id="sg" class="screen">
+  <div class="gh">
+    <h2 class="gt">The Seven Covenants of Salvation History</h2>
+    <button class="btn bs" onclick="go('s')">Summary Table</button>
+  </div>
+  <div class="cov-grid" id="cgrid"></div>
+</div>
+
+<!-- DETAIL -->
+<div id="sd" class="screen">
+  <div id="dcontent"></div>
+</div>
+
+<!-- SUMMARY -->
+<div id="ss" class="screen">
+  <div class="sh2">
+    <h2 class="st">The Seven Covenants — At a Glance</h2>
+    <button class="btn bo" onclick="go('g')">← All Covenants</button>
+  </div>
+  <div class="stw">
+    <table class="stab">
+      <thead><tr><th>#</th><th>Covenant</th><th>Mediator</th><th>Location</th><th>Scripture</th><th>Scope</th><th>Sign</th><th>Outcome</th></tr></thead>
+      <tbody id="stbody"></tbody>
+    </table>
+  </div>
+  <div class="conc">
+    <h3>Why Does God Deal With Us Through Covenants?</h3>
+    <p class="cans">"Because He wants to make us His family, though we are not so by nature."</p>
+    <p class="celab">The Eucharist is the New and Eternal Covenant — the fulfilment of all God's promises through Adam, Noah, Abraham, Moses, David, and the Prophets. At every Mass the covenant is renewed until he comes again.</p>
+    <p class="ccred">John Bergsma · Bible Basics for Catholics · Ave Maria Press, 2012</p>
+    <p class="ccred">www.JohnBergsma.com · www.TheSacredPage.com</p>
+  </div>
+</div>
+
+<script>
+const COV=[
+{id:'adam',num:'I',icon:'🌿',name:'The Adamic Covenant',short:'Adam',sub:'Setting the Son in the Garden',loc:'Mt. Eden',scr:'Genesis 1–3',med:'Adam & Eve',scope:'Sonship / Family',sign:'Sabbath Rest',out:'Fall — The Forbidden Fruit',c:'#2D6A2D',dk:'#1a4a1a',pl:'#e8f5e8',
+ov:`The first covenant is not explicitly named in Genesis but is clearly implied in God's arrangement with Adam and Eve in the Garden. It establishes the basic pattern for all subsequent covenants: God creates a family bond with humanity through a mediator on a mountain, investing that mediator with priestly, kingly, and prophetic roles. Bergsma calls this the "Adamic Covenant" or "Creation Covenant." Adam is placed in Eden not merely as a caretaker but as a son — the firstborn son of God, invested with royal, priestly, and prophetic dignity. The Garden is not a park but a sanctuary; not a forest but a temple. The Sabbath rest crowns the whole creation as God's dedicated dwelling-place.`,
+sm:`God creates Adam as his Son, Priest, Prophet, King, and Bridegroom. The Fall breaks the covenant, but even in judgment God promises a Saviour — "her seed shall bruise your head" (Gen 3:15). The entire rest of the Bible is the story of how that promise is kept.`,
+slides:[
+{t:'Creation: God Builds a Temple',sub:'The six days of Genesis are not merely biology — they are theology',
+bl:[{h:'Days 1–3: Forming the Formless',i:['Day 1 — Light & Dark (Time): God structures time itself, separating day from night','Day 2 — Sea & Sky (Space): The great realms of ocean and atmosphere are formed','Day 3 — Land & Vegetation (Habitat): Dry land emerges; plants and trees appear']},
+{h:'Days 4–6: Filling the Void',i:['Day 4 — Sun, Moon, Stars: fills Time; the Hebrew "mo\'ed" (liturgical seasons) marks when to worship (Gen 1:14)','Day 5 — Fish & Birds: fills the Sea & Sky with teeming life','Day 6 — Animals & Adam: fills the Habitat; humanity is the crown of creation']},
+{h:'The Sabbath: The Roof of the Temple',i:['Day 7 is not rest from exhaustion — it is divine enthronement, the dedication ceremony','Ancient temples were dedicated with rest once construction was complete','The cosmos was built for worship — the Sabbath is its liturgical capstone','Primary question of Genesis 1: not "How old is the universe?" but "What is the universe FOR?"']}],
+q:'"Image and likeness" = divine sonship — Adam is GOD\'S SON (cf. Gen 5:3; Luke 3:38)'},
+{t:'Adam: The First Son of God',sub:'"Image and likeness" = divine filiation (Gen 1:26; 5:3)',
+bl:[{h:'Unlocking "Image and Likeness"',i:['Gen 5:3: Seth was born "in Adam\'s own image, after his likeness" — meaning Seth is Adam\'s SON','Therefore Adam, made in God\'s "image and likeness," means Adam is GOD\'S SON','Luke 3:38 confirms explicitly: "Adam, son of God"','Divine filiation (sonship) is the starting point of all Christian identity']},
+{h:'Eden as Holy Mountain',i:['Rivers flowed OUT of Eden to water the earth (Gen 2:10–14)','Water flows downhill — therefore Eden was the HIGHEST point on earth','Ezekiel confirms: "Eden, the holy mountain of God" (Ez 28:14)','The garden is not merely pastoral — it is a mountaintop sanctuary']},
+{h:'What Sonship Means for Us Today',i:['Adam is not just history — he is our template and our dignity','The Catechism (§901–913): through Baptism every Christian shares Adam\'s priestly, prophetic, and kingly calling','If you are baptised, you have been adopted into the same divine sonship that Adam enjoyed','Sin broke it; Christ restored it — this is the foundation of Christian identity']}]},
+{t:"Adam's Four Vocations",sub:'The meaning of life — written in Genesis 1–2',
+bl:[{h:'👑 KING — Gen 1:26,28',i:['"Dominion" over all creation — not political tyranny but royal stewardship on God\'s behalf','True kingship = mastery over self, sin, and Satan first; then family, work, and relationships','Every Christian is called to this royal dignity through Baptism (CCC §908)']},
+{h:'🕊 PRIEST — Gen 2:15',i:['"Work" and "guard" the sanctuary — in Hebrew, abad + shamar appear together in the Pentateuch ONLY for priestly service','Eden was the original temple; Adam was its first priest','The lay faithful bring the gifts (bread and wine = their lives) to the altar at every Mass (CCC §901)']},
+{h:'📣 PROPHET — Gen 2:19–20',i:['God grants Adam the privilege of naming the animals — naming was a divine prerogative','Adam becomes God\'s spokesman, the first prophet, speaking God\'s creative word into being','Every Christian is called to speak God\'s truth to the world (CCC §904–907)']},
+{h:'💍 BRIDEGROOM — Gen 2:23–24',i:['"Bone of my bone, flesh of my flesh" — covenant-making language; the first wedding, God officiating','Spousal love is imprinted into the very structure of creation as a divine image','This models Christ\'s marriage to the Church — the ultimate meaning of all spousal love','The Eucharist is the foretaste of the eternal wedding banquet (Rev 19:9)']}],
+note:'These four roles explain the meaning of every human life — and are perfectly fulfilled only in Jesus Christ, the New Adam.'},
+{t:'The Fall — What Happened? (Gen 3:1–24)',sub:'The original crisis that all of salvation history addresses',
+bl:[{h:'The Temptation',i:['The serpent does not deny God exists — it casts doubt on his GOODNESS','"Did God really say...?" — the oldest question in the world, still the most dangerous','The lie: "God\'s rules aren\'t for your benefit — he\'s holding out on you"','Eve acts on appetite, beauty, and ambition; Adam passively consents — failing his priestly duty to "guard" the garden','Adam was THERE (Gen 3:6 — "her husband with her") but said nothing. A fatal silence.']},
+{h:'The Consequences',i:['Shame and fear replace innocence — the robe of grace and glory is lost (cf. Rev 3:18)','Harmony between man and woman, humanity and nature, is shattered','Adam blamed Eve; Eve blamed the serpent — the first bureaucratic buck-passing in history','The cherub bars the way back to Eden, entering from the East — the only door (Gen 3:24)']},
+{h:"God's First Promise — The Protoevangelium",i:['Even in punishment, God shows mercy: he clothes them in animal skins — something innocent had to DIE in their place','"I will put enmity between you and the woman" (Gen 3:15) — the first Gospel, spoken in Eden','"Her seed shall bruise your head" — a descendant of Eve will crush the serpent','The rest of the Bible is the story of finding and identifying that Seed','The skin garments foreshadow the Lamb of God who takes away the sin of the world']}],
+q:'"Proto-Evangelium: I will put enmity between you and the woman… her seed shall bruise your head." — Gen 3:15'},
+]},
+{id:'noah',num:'II',icon:'🌈',name:'The Noahic Covenant',short:'Noah',sub:'Washing Up and Starting Over',loc:'Mt. Ararat',scr:'Genesis 6–9',med:'Noah',scope:'World / All Nations',sign:'The Rainbow',out:'Fall — Drunkenness & Nakedness',c:'#1a5276',dk:'#0d3349',pl:'#e8f0f5',
+ov:`After the catastrophic spiral of sin following the Fall — Cain murdering Abel, escalating violence until "every imagination of the thoughts of humanity's heart was only evil continually" (Gen 6:5) — God does not simply destroy. He saves Noah and makes a new beginning. The Noahic covenant is a renewal and expansion of the Adamic covenant, now including all living creatures. Yet it is also less glorious — the Edenic harmony between humans and nature is replaced with fear and conflict. The rainbow seals God's pledge never to flood the earth again. But Noah's fall mirrors Adam's exactly, showing that the flood did not solve the problem of sin — it runs through every human heart and requires a more fundamental solution.`,
+sm:`Noah receives the same blessing as Adam — a new creation, wider in scope (all creatures), but less glorious. The rainbow seals God's pledge. Noah's fall shows a deeper solution is still needed — one that works from the inside out, not through external catastrophe.`,
+slides:[
+{t:'Noah: New Creation, New Adam',sub:'The flood is a second Genesis — not an end, but a beginning',
+bl:[{h:'The Flood as Re-Creation',i:['The flood returns the earth to "tohu wabohu" — formless and void, waters covering everything (cf. Gen 1:2)','The spirit/wind moves over the waters (Gen 8:1) — deliberately echoing Day One of Creation','Then dry land re-emerges; God starts again with Noah as the "new Adam"','The Ark is a "floating Eden" — a zoological garden saved from the deluge','Theologically this is RE-CREATION, not merely a natural disaster']},
+{h:'Noah: A Preacher of Righteousness',i:['2 Peter 2:5 reveals Noah as a "preacher of righteousness" who warned his contemporaries for decades','He built the Ark while preaching — an act of both obedience and prophetic witness','He was the only one who wanted to be saved — a sobering observation about free will','The Ark = the Church: enter it and be saved from the flood of sin and death']},
+{h:'The Covenant Content (Gen 9)',i:['God blesses Noah with Adam\'s exact words: "Be fruitful and multiply, fill the earth" — dominion restored','But now there is FEAR between humans and animals — the world is less glorious than Eden','The rainbow is the sign of the covenant — God\'s bow of war hung in the sky as a pledge of peace','"God\'s bow pointed heavenward: I will not shoot my arrows of judgment at you again"']},
+{h:"Noah's Fall — The Pattern Repeats",i:['Every covenant is followed by a fall — Bergsma\'s key structural observation in salvation history','Noah gets drunk on wine (fruit of the vine) and becomes naked — mirroring Adam exactly','Ham dishonours his father; a new curse falls — almost identical to the Adamic pattern','Fruit → nakedness → shame → curse: the same sequence repeats','The flood did not solve the problem of sin — it runs through every human heart (cf. Rom 3:23)']}],
+q:'"I establish my covenant with you… never again shall all flesh be cut off." — Gen 9:11',
+note:"The Noahic covenant is wider than Adam's (all creatures) but less glorious. God is widening his reach while humanity's hearts remain unchanged. A more fundamental solution is required."},
+]},
+{id:'abraham',num:'III',icon:'⭐',name:'The Abrahamic Covenant',short:'Abraham',sub:'A New Hope — Blessing for All Nations',loc:'Mt. Moriah',scr:'Genesis 12, 15, 17, 22',med:'Abraham',scope:'Tribe / All Nations',sign:'Circumcision',out:'Fulfilled in Christ (Gal 3:16)',c:'#7D4E0F',dk:'#4a2e08',pl:'#f5ede0',
+ov:`The covenant with Abraham is made in three stages, each progressively more serious — from a simple call and promise (Gen 12), to a dramatic formal covenant ceremony (Gen 15), to circumcision as a permanent bodily sign (Gen 17), and finally to the near-sacrifice of Isaac on Mount Moriah (Gen 22): the most dramatic moment in Genesis and the key to understanding the Cross. The three promises of Genesis 12 — great nation, great name, universal blessing — are each progressively "upgraded" into a formal, unbreakable covenant. Genesis 22, says Bergsma, is "the Calvary of the Old Testament."`,
+sm:`Abraham receives three promises (great nation, great name, universal blessing), each upgraded into a formal covenant. The near-sacrifice of Isaac on Moriah is the Old Testament's Calvary — same mountain, same only-begotten son, same wood carried up the hill. Genesis 22 is the key that unlocks the meaning of the Cross.`,
+slides:[
+{t:'Three Promises → Three Covenants',sub:'Genesis 12:1–3 contains seeds that grow into three formal covenants',
+bl:[{h:'1. GREAT NATION — Gen 12 → 15',i:['Promise of countless descendants and a land to live in','Formalized in Gen 15: the "Covenant of the Pieces" — God walks between cut animals','This is a self-curse: "If I break my word, may I be cut up like these animals"','Represented by fire and smoke (theophany), GOD walks through — not Abraham','Divine condescension at its most extreme: God calls down the curse on HIMSELF']},
+{h:'2. GREAT NAME — Gen 12 → 17',i:['Promise that Abram will be famous — the ancestor of kings','Formalized in Gen 17: Abram\'s name lengthened to ABRAHAM ("father of a multitude")','Circumcision added as the covenant sign — a permanent mark in the flesh','"In cutting a covenant, you cut yourself." Blood = shared life = family bond','Like an engagement ring upgraded to a wedding ring — permanent, public commitment']},
+{h:'3. UNIVERSAL BLESSING — Gen 12 → 22',i:['The greatest promise: "In you all families of the earth shall be blessed" (Gen 12:3)','Formalized in Gen 22: the near-sacrifice of Isaac on Mount Moriah','God swears by HIMSELF — the greatest possible oath; nothing higher to swear by','"By your seed shall all the nations of the earth be blessed" (Gen 22:16–18)','Fulfilled in Jesus Christ, Abraham\'s ultimate "seed" (Gal 3:16)']}],
+q:'"I have sworn… by your seed shall all the nations of the earth be blessed." — Gen 22:16–18'},
+{t:'The Sacrifice of Isaac: Genesis 22',sub:'"Genesis 22 is the Calvary of the Old Testament" — Bergsma',
+note:'The Greek word monogenes (John 3:16) almost certainly translates the Hebrew yahid — used THREE TIMES in Genesis 22. St. John is deliberately connecting Jesus with Isaac. Bergsma calls this "pre-jà vu" — we see in the OT something that reminds us of what hasn\'t happened yet in biblical history but which we know from the Gospels.',
+tbl:{h:['Feature','Isaac (Genesis 22)','Jesus (Gospels)'],r:[
+{f:'Relationship',a:'"Only begotten son" (yahid) — Gen 22:2,12,16',b:'"Only begotten Son" (monogenes) — John 3:16'},
+{f:'The Wood',a:'Isaac CARRIES the wood of the sacrifice up the mountain',b:'Jesus CARRIES the wood of the Cross to Calvary'},
+{f:'Consent',a:'Isaac was stronger; he willingly cooperated — no coercion',b:'Jesus entered willingly — "No one takes my life from me" (Jn 10:18)'},
+{f:'Location',a:'Mount Moriah — Abraham names it "God will provide"',b:'Calvary — within sight of the Temple on Moriah'},
+{f:'The Lamb',a:'"God will provide himself the lamb" (Gen 22:8)',b:'"Behold the Lamb of God who takes away the sin of the world" (John 1:29)'},
+{f:'The Result',a:'God provides a RAM — Isaac is spared at the last moment',b:'God provides HIMSELF as the Lamb — Jesus dies in our place'},
+{f:'Outcome',a:'"In your seed all nations of the earth shall be blessed"',b:'The Great Commission — blessing to all nations (Mt 28:18–20)'},
+]}},
+]},
+{id:'moses',num:'IV',icon:'📜',name:'The Mosaic Covenant',short:'Moses',sub:"God's Laws, Israel's Flaws",loc:'Mt. Sinai',scr:'Exodus 19–24, 32–34',med:'Moses / Israel',scope:'Nation / Law',sign:'The Sabbath',out:'Fall — The Golden Calf',c:'#7E5109',dk:'#4a2f07',pl:'#fdf2e9',
+ov:`The covenant at Sinai is the most detailed and most broken covenant in the Old Testament. It is broken and remade at least twice — catastrophically after the Golden Calf (Exodus 32–34) and again in Deuteronomy after 40 years of wilderness rebellion. Each time it is remade it becomes less glorious and more law-heavy. Understanding why the Mosaic Law was given — and why it had to be superseded — is the key to understanding St. Paul's Letter to the Galatians. At Sinai, God formally adopts Israel as his firstborn son and calls the whole people to be a royal priesthood. But they keep failing the call. The progression: 10 Commandments → 10 + Leviticus → 10 + Leviticus + Deuteronomy. The more the relationship deteriorates, the more legal structures are needed.`,
+sm:`At Sinai, God adopts Israel as his firstborn son and gives the Torah as family rules. The Golden Calf shatters the covenant; it is remade twice with ever more laws added as a pedagogy. Moses himself cannot bring Israel in — Joshua (Y'shua = Jesus) must, pointing forward to the one who will succeed where Moses could not.`,
+slides:[
+{t:"Sinai: Israel Adopted as God's Son",sub:'"You shall be to me a royal priesthood and a holy nation" — Exodus 19:6',
+bl:[{h:'The Exodus: Battle of the Gods',i:['The ten plagues were not random disasters — each defeated a specific Egyptian deity','Hapi (Nile god) falls to the plague of blood; Hekhet (frog goddess) is humiliated','Amon-Re (sun god) is blotted out for three days; Pharaoh himself — considered divine — cannot save his firstborn son','The Exodus is a systematic demolition of Egyptian religion: every Egyptian god simply IS NOT']},
+{h:"God's Adoption of Israel",i:['God tells Pharaoh: "Israel is my firstborn son" (Ex 4:22) — adoption language','"Firstborn" implies other, younger sons (the Gentile nations) — Israel\'s role is priestly, not exclusive','Israel\'s calling: to serve as priests for the rest of humanity, mediating God\'s blessing to all nations']},
+{h:'The Blood Covenant (Ex 24)',i:['Moses sprinkles half the sacrificial blood on the altar (= God) and half on the people','They now share one blood — they are FAMILY; "Behold the blood of the covenant"','They then go up the mountain and EAT with God (Ex 24:11) — the covenant meal','Every family eats together — the Eucharistic resonances are unmistakable']},
+{h:'The Ten Commandments: Family Rules',i:['First 3 Commandments: govern the relationship with the Father','Next 7 Commandments: govern relationships with siblings (other human beings)','The Tabernacle = a portable Eden for meeting God in the desert — cherubim, menorah (tree of life), and incense']}]},
+{t:'Three Stages of the Mosaic Covenant',sub:'The Golden Calf: When the Honeymoon Ended — Exodus 32',
+bl:[{h:'FIRST SINAI — Exodus 20–24',i:['The original covenant — glorious, intimate, and brief','God appears in fire and thunder; covenant ratified with sacrifice and a meal','The Ten Commandments are given; the people eat with God (Ex 24:11)','Israel is called to be "a kingdom of priests and a holy nation" — everything is perfect']},
+{h:'SECOND SINAI — Exodus 32–34',i:['Moses has been on the mountain 40 days — the Israelites panic and revert to Egyptian bull worship','Aaron enables the sin instead of resisting it — a tragic failure of priestly leadership','Moses smashes the tablets; God threatens to destroy Israel; Moses intercedes','Covenant remade with significantly MORE laws (the whole Book of Leviticus is added)','St. Paul: "The law was added because of transgressions" (Gal 3:19)']},
+{h:'DEUTERONOMY — Deuteronomy 1–34',i:['After 40 years of wilderness rebellion, Moses gives a THIRD law-giving in Moab','Some laws are now explicit concessions to human weakness — e.g., divorce (Mt 19:8)','Moses dies without entering the Promised Land — he can see it but cannot cross','JOSHUA (Y\'shua = Jesus), not Moses, leads Israel into the Promised Land','The pattern points forward: where Moses (Law) cannot bring us, Jesus (Grace) can']}],
+q:'"You shall be to me a kingdom of priests and a holy nation." — Exod 19:6',
+note:"Like a marriage that breaks down and needs lawyers to manage — the more the relationship deteriorates, the more legal structures are needed. Yet even here, God never abandons his people."},
+]},
+{id:'david',num:'V',icon:'👑',name:'The Davidic Covenant',short:'David',sub:'Once and Future King',loc:'Mt. Zion',scr:'2 Samuel 7; Psalm 89',med:'David',scope:'Kingdom / Royal Priesthood',sign:'The Temple',out:'Decline into Exile',c:'#512E8E',dk:'#2d1a55',pl:'#f0e8f7',
+ov:`David is arguably the most important figure in the Old Testament after Moses and Abraham. From the Book of Ruth to the end of the OT, the biblical narrative is essentially "The David Channel: All David, All the Time." Moses dominates the first six books; from Ruth onward it is David — his kingdom in the historical books, his psalms in the Psalter, the wisdom flowing from Solomon, and the prophets spending most of their time promising that David's kingdom will come again in a new and perfect form. The Davidic covenant — "I will be his Father and he shall be my Son" (2 Sam 7:14) — is God's promise of an eternal dynasty.`,
+sm:`God promises David an eternal dynasty — his son will build the Temple and reign forever as God's adopted Son. Solomon's Temple is the theological encyclopedia of the OT, encoding all previous covenants in its very structure. But the kingdom declines into exile, the Temple is destroyed, and the prophets begin to speak of a New David, a New Temple, and a New Covenant.`,
+slides:[
+{t:'Why David Matters So Much',sub:'"A man after God\'s own heart" — 1 Samuel 13:14',
+bl:[{h:'🏛 POLITICAL',i:['David unified the Twelve Tribes and founded the greatest Israelite empire','Strategic masterstroke: Jerusalem (belonging to no tribe) as the capital — like Washington DC or Ottawa','Neutral ground between North and South Israel, binding a fractured nation together']},
+{h:'🎵 LITURGICAL',i:['David revolutionised worship by introducing MUSIC and SINGING into the liturgy for the first time','Before David, there were no psalms — Moses\'s worship was conducted in silence','He appointed professional musicians and singers in the sanctuary (1 Chr 16)','His psalms became prophecies of the Passion of Christ — Psalm 22 is the crucifixion in miniature','Without David, we would have no "Lord, open my lips" at Morning Prayer']},
+{h:'✨ ESCHATOLOGICAL',i:['David foreshadows Jesus Christ — both anointed with God\'s Spirit, given power over evil','Both are suffering kings: David spent years as a refugee, hunted by Saul before his enthronement','Both are priest-kings in the order of Melchizedek (Ps 110)','"Son of David" becomes the messianic title par excellence — Jesus is the definitive fulfilment']}]},
+{t:'The Davidic Covenant: 2 Samuel 7',sub:"God's promise to David — the hinge on which the whole Old Testament turns",
+bl:[{h:'The Key Wordplay',i:['David wants to build God a "house" (temple) — a noble impulse','God flips it: "I will build YOU a house" — meaning a DYNASTY','"You wanted to give me a permanent dwelling; I will give you a permanent family line"','God is more interested in persons than in buildings']},
+{h:'Three Promises in 2 Sam 7:9–14',i:['(1) David\'s son will BUILD the temple — fulfilled immediately in Solomon (1 Kings 6–8)','(2) David\'s son will be God\'s ADOPTED SON — "I will be his Father, and he shall be my Son" (2 Sam 7:14)','(3) David\'s throne will last FOREVER — fulfilled ultimately only in Jesus Christ','All three find their definitive fulfilment in the Son of God']},
+{h:'Divine Sonship Restored Through the King',i:['What Adam lost is now given to David and his dynasty','The king has divine sonship on behalf of the whole people','"Trickle-down" grace: if the people follow their king, they share in his blessing','When the king fails, the people suffer; when he is faithful, they flourish']},
+{h:'Melchizedek Priesthood',i:['When David conquers Jerusalem (Melchizedek\'s ancient city), he inherits the Melchizedek priesthood','Psalm 110: "You are a priest forever, in the order of Melchizedek"','David wears the ephod (priestly robe), offers sacrifices, blesses the people (2 Sam 6)','Jesus inherits this dual role as Priest-King — the Letter to the Hebrews expounds this at length']}],
+q:'"I will make you a great name… I will make YOU a house. Your seed will sit on the throne forever. I will be his Father, and he shall be my Son." — 2 Sam 7:9–14'},
+{t:"Solomon's Temple: The Summit of the Old Testament",sub:'1 Kings 8 — Every previous covenant finds its symbol and fulfilment here',
+bl:[{h:'🌿 Eden / Adam',i:['The Temple interior is decorated with flowers, animals, gold, and precious stones — recalling the Garden of Eden','The stream flowing from the Temple mount is called "the Gihon," after one of Eden\'s four rivers (Gen 2:13)','The menorah = the Tree of Life; the cherubim guard the Holy of Holies as they guarded Eden']},
+{h:'🌊 Ark / Noah',i:['The Temple was built with three levels, deliberately echoing Noah\'s three-deck Ark (Gen 6:16)','Like the Ark, it is a "floating Eden" — God\'s presence dwelling amid the flood of sin and time']},
+{h:'⛰ Moriah / Abraham',i:['The Temple sits on the very rock where Abraham prepared to sacrifice Isaac (2 Chr 3:1)','Jewish tradition: animal sacrifices were efficacious because they recalled Isaac\'s willing self-offering here','The Temple Mount is the site of both the typological and the definitive sacrifice']},
+{h:'📜 Tabernacle / Moses',i:['When Solomon transfers the Ark into the Temple, the Davidic covenant ABSORBS the Mosaic covenant','The Tabernacle moves inside the Temple — a visible sign that David\'s covenant is now the encompassing reality','The Temple is not just a religious building — it is a THEOLOGICAL ENCYCLOPEDIA in stone']}],
+note:"1 Kings 8 is the highpoint of the entire Old Testament. Immediately after this summit, the decline begins — Solomon's foreign wives, the division of the kingdom, and the long descent toward exile."},
+{t:'From Temple to Exile: The Long Decline',sub:'After Solomon, everything goes downhill — but God sends the Prophets',
+bl:[{h:'~930 BC — Kingdom Divides',i:["Solomon's son Rehoboam refuses to cut taxes; the northern 10 tribes break away under Jeroboam",'Two kingdoms: "Israel" (North, 10 tribes) and "Judah" (South, 2 tribes)','The North immediately returns to golden calf worship — exactly what the covenant forbade']},
+{h:'~722 BC — Israel (North) Falls',i:['The Assyrian Empire under Sargon II destroys the northern 10 tribes','The population is deported and scattered — the "Ten Lost Tribes" never recovered','Exactly what Deuteronomy 28 had predicted: exile as the covenant curse for persistent infidelity']},
+{h:'~587 BC — Judah Falls / Exile',i:['Babylon under Nebuchadnezzar destroys Jerusalem and burns Solomon\'s Temple','The Davidic dynasty effectively ends; the people are carried captive to Babylon','Theological catastrophe: the covenant with Moses lies in ruins; where is God? Yet the prophets insist this is not the end']},
+{h:'~540–400 BC — Return & Restoration',i:['After 70 years, Cyrus of Persia allows Jews to return from Babylon','The Second Temple is built — smaller, less glorious; no Ark, no divine fire, no Davidic king','The prophets\' promises of a New Covenant, a New David, and a New Temple remain unfulfilled','The whole OT ends on a note of waiting — like the end of Act IV in a five-act play']}],
+q:'"His line shall endure for ever, his throne as long as the sun before me." — Ps 89:36'},
+]},
+{id:'prophets',num:'VI',icon:'☀️',name:'The New Covenant in the Prophets',short:'The Prophets',sub:'Stormy Today — Sunny Tomorrow',loc:'Mt. Zion (Exile)',scr:'Jer 31:31; Isa 55:3; Ezek 36:25',med:'Isaiah / Jeremiah / Ezekiel',scope:'New Covenant Hope',sign:'New Heart / New Spirit',out:'Promised — Awaiting Fulfilment',c:'#B7770D',dk:'#7d5200',pl:'#fef9e7',
+ov:`The three great writing prophets — Isaiah, Jeremiah, and Ezekiel — each contribute a distinct piece of the New Covenant promise during and after the Babylonian exile. Together they describe a future covenant that will: come through a new Son of David; be written on hearts rather than stone; involve a gift of God's own Spirit; include all nations, not just Israel; forgive sins completely and permanently; and establish an eternal priestly-kingly reign. When Jesus says at the Last Supper "This is the new covenant in my blood," he is claiming to fulfil all three prophets simultaneously. Bergsma's memorable image: the prophets are like weather forecasters who see nothing but storms in the immediate forecast but whose extended forecast is full of sunshine — "stormy today, sunny tomorrow."`,
+sm:`Isaiah foresees a New Son of David who IS the covenant itself (Is 42:6). Jeremiah names it the New Covenant — written on hearts, not stone (Jer 31:31). Ezekiel adds a new heart, a new spirit (Baptism and Confirmation prophesied 600 years early), and bodily resurrection. All three await fulfilment in one person.`,
+slides:[
+{t:'Isaiah: The Fifth Gospel',sub:'~740–700 BC — The most quoted Old Testament book in the New Testament (over 400 citations)',
+bl:[{h:'Isaiah 9:1–7 — A New Son of David',i:['"For to us a child is born, to us a son is given... his name shall be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace"','The royal names ("Mighty God," "Everlasting Father") suggest this Son of David is not merely human','This Son will rule on David\'s throne forever — read every Christmas, ultimately about Jesus']},
+{h:'Isaiah 11:1–5 — The Branch of Jesse',i:['"A shoot will come from the stump of Jesse" — when the Davidic tree is felled by Babylon, a new shoot will grow','This Son will be anointed with God\'s Spirit, giving him every kind of wisdom','Greater than both David (anointed) and Solomon (wisdom) combined — the perfect Priest-Prophet-King']},
+{h:'Isaiah 42:6 — "I Give You as a Covenant"',i:['God says to his Servant: "I have given you as a covenant to the people, a light to the nations"','A person BEING a covenant — not just making one — is unprecedented in covenant theology','The New Covenant will not be a legal code but a PERSON — Jesus is the covenant incarnate']},
+{h:'Isaiah 55:1–3 — The Eucharistic Banquet',i:['"Come to the waters... come buy and eat... I will make with you an everlasting covenant, my steadfast love for David"','God invites the poor to a FREE banquet sealed with the Davidic covenant open to ALL','This IS the Mass: poor people, free banquet, covenant renewal in every parish of the world']}]},
+{t:'Jeremiah: The New Covenant Named',sub:'~645–585 BC — The ONLY place in the entire Old Testament where "New Covenant" appears',
+q:'"Behold the days are coming, says the LORD, when I will make a NEW COVENANT with the house of Israel… not like the covenant which I made with their fathers… I will put my law within them, and write it upon their hearts… I will forgive their iniquity and remember their sin no more." — Jeremiah 31:31–34',
+note:"When Jesus says at the Last Supper 'This is the new covenant in my blood' (Lk 22:20), he is directly quoting Jeremiah 31. When the priest says 'the Blood of the new and eternal covenant' at every Mass — the whole assembly re-enacts the fulfilment of Jeremiah's prophecy. The Letter to the Hebrews (chapters 8–10) expounds this passage at length as the charter of the New Testament.",
+tbl:{h:['Feature','OLD Covenant (Mosaic)','NEW Covenant (Jeremiah\'s Promise)'],r:[
+{f:'Written on',a:'TABLETS OF STONE — external, imposed',b:'HUMAN HEARTS — interior, transformative'},
+{f:'Obedience',a:'External compliance under threat of punishment',b:'Interior transformation — people WANT to obey God'},
+{f:'Knowledge of God',a:'Requires constant teaching and reminding',b:'"They shall all know me" — direct, personal, intimate'},
+{f:'Durability',a:'People keep breaking it — remade again and again',b:'Sins FORGIVEN and FORGOTTEN — a clean slate forever'},
+{f:'Legal Weight',a:'Law of Sinai + Leviticus + Deuteronomy — ever heavier',b:'A radically simpler covenant of grace and love'},
+{f:'Mechanism',a:'Human willpower and external pressure',b:'The Holy Spirit transforming the heart from within'},
+]}},
+{t:'Ezekiel: The Covenant of Peace',sub:'~590–570 BC — The Spirit, the New Heart, and the Resurrection',
+bl:[{h:'Ezekiel 34 — The Good Shepherd',i:['"I will set over them one shepherd, my servant David, and he shall feed them"','God promises to send a New David — a good shepherd king who will protect his flock','Jesus explicitly claims this title: "I am the Good Shepherd" (John 10:11,14) — a direct claim to fulfil Ezekiel 34']},
+{h:'Ezekiel 34–36 — Covenant of Peace (Shalom)',i:['What Jeremiah calls "New Covenant," Ezekiel calls "Covenant of PEACE (shalom)"','Dangerous animals become harmless (like Eden), gentle rains fall, the people are secure','The Eden imagery is unmistakable — the New Covenant will be a return to paradise conditions']},
+{h:'Ezekiel 36:24–27 — New Heart, New Spirit',i:['"I will sprinkle clean water upon you… A new HEART I will give you, and a new SPIRIT I will put within you"','"I will put my Spirit within you, and cause you to walk in my statutes"','BAPTISM and CONFIRMATION prophesied 600 years before Christ — water + Spirit transforming the inner person','The problem with the Old Covenant was never the Law but the HEART — the New Covenant solves the heart problem']},
+{h:'Ezekiel 37 — Valley of Dry Bones',i:['"I will open your graves, and raise you from your graves… I will put my Spirit within you, and you shall live"','Resurrection is part of the New Covenant promise — the Spirit who recreates hearts can recreate bodies','Points directly to Easter Sunday and the general resurrection at the end of time','The New Covenant is not just for this life — it encompasses the whole of existence, into eternity']}]},
+]},
+{id:'jesus',num:'VII',icon:'✝️',name:'The Eucharistic Covenant',short:'Jesus Christ',sub:'The New and Eternal Covenant',loc:'Mt. Zion / Calvary',scr:'Luke 22:20; John 19:34',med:'Jesus Christ',scope:'Universal Church',sign:'The Eucharist',out:'Eternal Fulfilment',c:'#8B0000',dk:'#5a0000',pl:'#fde8e8',
+ov:`Jesus does not merely make a new covenant — he IS the covenant (Is 42:6: "I give you as a covenant to the people"). He is simultaneously the new Adam (Son of God restoring divine sonship), the new Noah (saving humanity from the flood of sin), the Seed of Abraham (blessing all nations), the new Moses (giving a law of grace written on hearts), and the Son of David (ruling forever from an eternal throne). At the Last Supper, on Calvary, and in every Eucharist, the new and eternal covenant is enacted and renewed. Every Mass is the fulfilment of every promise made since Eden. "This is the chalice of my Blood, the Blood of the new and eternal covenant" — said in every language, on every continent, every single day.`,
+sm:`Jesus is the New Adam, New Noah, Seed of Abraham, New Moses, and Son of David — all in one person. He does not merely make the covenant; he IS the covenant. The Eucharist is the summit of all covenants — the eternal family bond between God and humanity, renewed at every Mass until he comes again.`,
+slides:[
+{t:'Jesus: The Fulfilment of Every Covenant',sub:"He doesn't just make a new covenant — he IS the covenant (Is 42:6)",
+bl:[{h:'New ADAM',i:['Is "image and likeness of God" perfectly (Col 1:15) — the New Adam who perfectly fulfils what Adam failed to do','Undoes the fall through obedience where Adam disobeyed: "obedient unto death, even death on a cross" (Phil 2:8)','Restores divine sonship to all who are baptised into him (Rom 5:12–21)','1 Cor 15:45: "The first Adam became a living being; the last Adam became a life-giving spirit"']},
+{h:'New NOAH',i:['Saves humanity from the flood of sin and death — the definitive Saviour','The Cross is the new Ark — enter it and be saved; "the blood of Jesus cleanses us from all sin" (1 Jn 1:7)','1 Peter 3:20–21 explicitly connects Noah\'s Ark with Baptism','As only Noah\'s household was saved through water, so Baptism now saves us']},
+{h:'Seed of ABRAHAM',i:['Gal 3:16: "The promises were made to Abraham and to his seed — referring to ONE person, who is Christ"','In Jesus, ALL nations receive the blessing promised to Abraham — the universal mission','The Great Commission (Mt 28:18–20) is the fulfilment of Gen 12:3: "all families of the earth shall be blessed"']},
+{h:'New MOSES',i:['Gives the New Law — not on stone tablets, but on human hearts through the Spirit (Jer 31:33)','The Sermon on the Mount (Mt 5–7) is Jesus as the new Moses on a new mountain, giving a higher Law','"You have heard it was said… but I say to you…" — not abolishing but fulfilling and elevating','Five great discourses in Matthew echo the five books of Moses']},
+{h:'Son of DAVID',i:['Born of David\'s line (Mt 1); acclaimed "Son of David" by the crowds and by the blind (Mt 21; 9:27)','Annunciation (Lk 1:32–33): "His kingdom will never end" — the fulfilment of 2 Sam 7','He reigns from Calvary as his throne — the titulus reads "King of the Jews" in three languages','He ascends to the right hand of the Father — the eternal enthronement promised to David']}],
+q:'"This cup that is poured out for you is the new covenant in my blood." — Luke 22:20'},
+{t:'The Eucharistic Covenant: The Blood of the New Covenant',sub:'Every Mass is a covenant renewal — the New and Eternal Covenant in action',
+bl:[{h:'Luke 22:20 — The Last Supper',i:['"This cup… is the new covenant in my blood" — Jesus quotes Jeremiah 31 and Exodus 24 simultaneously','The language of Jeremiah 31:31 ("new covenant") and Moses ("behold the blood of the covenant") in one breath','The disciples would have heard both references immediately — this is total fulfilment']},
+{h:'John 19:34 — The Cross',i:['"There came out blood and water" from his side — signs of Eucharist (blood) and Baptism (water)','The blood-sprinkling of Sinai (Ex 24) finds its ultimate fulfilment on Calvary','His side is the new Eden — Eve was taken from Adam\'s side; the Church is born from Christ\'s side']},
+{h:'John 7:37 — Living Water',i:['"Out of his heart shall flow rivers of living water" — fulfils Ezekiel\'s river from the Temple (Ez 47)','The Temple has become a person; the river of life flows from Christ himself']},
+{h:'Galatians 4:6 — The Spirit of Sonship',i:['"God has sent the Spirit of his Son into our hearts, crying, Abba! Father!"','Divine sonship — lost by Adam, promised through all the covenants — is now restored to every baptised person','The cry "Abba" is the sign that the New Covenant has arrived in your heart']}],
+q:'"The Eucharist is the summit of all covenants — the eternal family bond between God and humanity."'},
+{t:'Where All the Covenants Meet: The Mass',sub:'Every element of the Eucharistic liturgy resonates with every previous covenant',
+bl:[{h:'✦ The Tree of Life Restored',i:['The Eucharist is the Tree of Life (Rev 2:7) — what Adam was barred from in Eden, we receive every Sunday','The cherubim no longer bar the way; through the priest we enter the Holy of Holies']},
+{h:"✦ Melchizedek's Meal Perfected",i:['The bread and wine recall Abraham\'s encounter with Melchizedek (Gen 14:18) — the first Eucharistic meal in Scripture','"You are a priest forever in the order of Melchizedek" (Ps 110) — fulfilled in Christ and shared through the ministerial priesthood']},
+{h:'✦ The Blood of the Covenant',i:['Moses: "Behold the blood of the covenant" (Ex 24:8) — half on God\'s altar, half on the people','Jesus: "This is the cup of the new covenant in my blood" — the people now drink the covenant blood','The intimacy surpasses Sinai: not sprinkled on us externally but given to us to drink']},
+{h:'✦ The Royal Priesthood Gathered',i:['The baptised faithful are the new Israel — "a royal priesthood, a holy nation" (1 Pet 2:9)','The priestly people God promised at Sinai is now fully realised in the Church','"Something greater than the Temple is here" (Mt 12:6) — Jesus himself is Temple, altar, priest, and sacrifice']},
+{h:'✦ The New and Eternal Covenant',i:['"Again and again you offered them covenants" — Eucharistic Prayer II recaps all of salvation history','"This is the chalice of my Blood, the Blood of the new and ETERNAL covenant" — spoken at every Mass','Every covenant from Adam to David finds its fulfilment in these words, spoken in every language, on every continent, every day']}],
+q:'"Again and again you offered them covenants and through the prophets taught them to look forward to salvation." — Eucharistic Prayer II'},
+]},
+];
+
+/* ============================================================ SCREEN ============================================================ */
+function go(id){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  const map={i:'si',g:'sg',d:'sd',s:'ss'};
+  document.getElementById(map[id]).classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+  if(id==='g') buildGrid();
+  if(id==='s') buildSum();
+}
+/* ============================================================ PILLS ============================================================ */
+(function(){
+  const c=document.getElementById('pills');
+  COV.forEach(cv=>{
+    const d=document.createElement('div');
+    d.className='pill';d.style.setProperty('--cc',cv.c);
+    d.onclick=()=>showDet(cv.id);
+    d.innerHTML=`<span class="pn">${cv.num}</span><span class="pi">${cv.icon}</span><span class="pt"><span class="pname">${cv.short}</span><span class="ploc">${cv.loc} · ${cv.scr}</span></span>`;
+    c.appendChild(d);
+  });
+})();
+/* ============================================================ GRID ============================================================ */
+function buildGrid(){
+  const g=document.getElementById('cgrid');
+  if(g.dataset.done) return; g.dataset.done='1';
+  COV.forEach(cv=>{
+    const d=document.createElement('div');
+    d.className='ccard';
+    d.onclick=()=>showDet(cv.id);
+    d.innerHTML=`
+      <div class="ch" data-r="${cv.num}" style="background:linear-gradient(135deg,${cv.c},${cv.dk})">
+        <div class="crom">${cv.num}</div><div class="cion">${cv.icon}</div>
+        <div class="cname">${cv.name}</div>
+        <div class="csub">${cv.sub}</div>
+      </div>
+      <div class="cbody">
+        <div class="cmeta">
+          <span class="mt" style="background:${cv.pl};color:${cv.c}">📍 ${cv.loc}</span>
+          <span class="mt" style="background:${cv.pl};color:${cv.c}">📖 ${cv.scr}</span>
+          <span class="mt" style="background:${cv.pl};color:${cv.c}">👤 ${cv.med}</span>
+        </div>
+        <p class="cov">${cv.ov.slice(0,195)}…</p>
+      </div>
+      <div class="cf" style="background:${cv.c}"><span>Sign: ${cv.sign}</span><span>View Details →</span></div>`;
+    g.appendChild(d);
+  });
+}
+/* ============================================================ DETAIL ============================================================ */
+function showDet(id){
+  const cv=COV.find(x=>x.id===id);
+  if(!cv) return;
+
+  let slidesHTML='';
+  cv.slides.forEach((s,si)=>{
+    let inner='';
+    if(s.sub) inner+=`<div class="ssub">${s.sub}</div>`;
+    if(s.q && !s.tbl) inner+=`<blockquote class="sq">${s.q}</blockquote>`;
+    if(s.bl){
+      inner+=`<div class="cblocks">`;
+      s.bl.forEach(b=>{
+        inner+=`<div class="cblock"><div class="bh">${b.h}</div><ul class="bl">${b.i.map(x=>`<li>${x}</li>`).join('')}</ul></div>`;
+      });
+      inner+=`</div>`;
+      if(s.q) inner+=`<blockquote class="sq">${s.q}</blockquote>`;
+    }
+    if(s.tbl){
+      inner+=`<div class="tw"><table><thead><tr>${s.tbl.h.map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>`;
+      s.tbl.r.forEach(r=>{
+        const isNew=s.tbl.h[2]&&s.tbl.h[2].includes('NEW');
+        inner+=`<tr><td class="tf">${r.f}</td><td>${r.a}</td><td class="${isNew?'tnew':''}">${r.b}</td></tr>`;
+      });
+      inner+=`</tbody></table></div>`;
+      if(s.q) inner+=`<blockquote class="sq">${s.q}</blockquote>`;
+    }
+    if(s.note) inner+=`<div class="snote">💡 ${s.note}</div>`;
+    slidesHTML+=`<div class="scard reveal"><div class="snum">SLIDE ${si+1} OF ${cv.slides.length}</div><h3 class="stit">${s.t}</h3>${inner}</div>`;
+  });
+
+  const idx=COV.indexOf(cv);
+  const next=idx<COV.length-1?COV[idx+1]:null;
+
+  document.getElementById('dcontent').innerHTML=`
+    <div class="dh" data-r="${cv.num}" style="background:linear-gradient(135deg,${cv.c},${cv.dk})">
+      <div class="dht">
+        <div><div class="dri">${cv.num} · ${cv.short}</div><h1 class="dn">${cv.name}</h1><p class="dst">${cv.sub}</p>
+          <div class="dbadges">
+            <span class="badge">📍 ${cv.loc}</span>
+            <span class="badge">📖 ${cv.scr}</span>
+            <span class="badge">👤 ${cv.med}</span>
+            <span class="badge">🔖 ${cv.sign}</span>
+            <span class="badge">⚠️ ${cv.out}</span>
+          </div>
+        </div>
+        <div class="dicon">${cv.icon}</div>
+      </div>
+    </div>
+    <div class="db" style="--cc:${cv.c};--cc-dark:${cv.dk};--ccp:${cv.pl}">
+      <div class="dsec"><div class="dlbl">Overview</div><div class="ov">${cv.ov}</div></div>
+      <div class="dsec"><div class="dlbl">Detailed Slide Content</div>${slidesHTML}</div>
+      <div class="dsec"><div class="dlbl">In Brief</div><div class="smbox"><p>${cv.sm}</p></div></div>
+      <div style="margin-top:1.8rem;display:flex;gap:.7rem;flex-wrap:wrap">
+        <button class="btn bo" style="border-color:${cv.c};color:${cv.c}" onclick="go('g')">← All Covenants</button>
+        <button class="btn bs" onclick="go('s')">Summary Table</button>
+        ${next?`<button class="btn" style="background:${next.c};color:#fff;padding:.38rem 1.1rem;border-radius:6px;cursor:pointer;font-family:var(--fu);font-size:.78rem;font-weight:700;letter-spacing:.05em" onclick="showDet('${next.id}')">Next: ${next.short} →</button>`:''}
+      </div>
+    </div>`;
+
+  go('d');
+  setTimeout(()=>{
+    const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('vis');obs.unobserve(x.target)}})},{threshold:.08});
+    document.querySelectorAll('#dcontent .reveal').forEach(el=>obs.observe(el));
+  },120);
+}
+/* ============================================================ SUMMARY ============================================================ */
+function buildSum(){
+  const tb=document.getElementById('stbody');
+  if(tb.dataset.done) return; tb.dataset.done='1';
+  COV.forEach(cv=>{
+    const tr=document.createElement('tr');
+    tr.style.background=cv.pl;
+    tr.innerHTML=`
+      <td class="trom" style="color:${cv.c}" onclick="showDet('${cv.id}')" title="View ${cv.name}">${cv.num} ${cv.icon}</td>
+      <td><strong>${cv.name}</strong></td>
+      <td>${cv.med}</td><td>${cv.loc}</td>
+      <td style="font-style:italic;font-size:.83rem">${cv.scr}</td>
+      <td>${cv.scope}</td><td>${cv.sign}</td>
+      <td style="color:${cv.c};font-weight:600">${cv.out}</td>`;
+    tb.appendChild(tr);
+  });
+}
+/* ============================================================ REVEAL INIT ============================================================ */
+document.addEventListener('DOMContentLoaded',()=>{
+  const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('vis');obs.unobserve(x.target)}})},{threshold:.08});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+});
+</script>
+</body>
+</html>
